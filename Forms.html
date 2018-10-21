@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML формы</title>
+</head>
+<body>
+<h1>Profile Edit Page</h1>
+<form action="">
+    <fieldset>
+        <legend>
+            Basic Info:
+        </legend>
+        <p>ID
+            <label>
+                <input name="ID" type="id" size="25" maxlength="30" value="725" />
+            </label> <br /></p>
+        <p>First Name
+            <label>
+                <input name="First Name" type="text" size="25" maxlength="30" value="" />
+            </label> <br /></p>
+        <p>Last Name
+            <label>
+                <input name="Last Name" type="text" size="25" maxlength="30" value="" />
+            </label> <br /></p>
+        <p>Password
+            <label>
+                <input name="pd" type="password" size="25" maxlength="30" value="***********" />
+            </label> <br />
+        <p>Phone
+            <label>
+                <input name="Tel" type="Tel" size="25" maxlength="30" value="380" />
+            </label> <br /></p>
+        <p>Email
+            <label for="email"></label><input type="text" name="email" id="email" size="25" maxlength="30" value="myemail@placeholder.com" /> <br /></p>
+        <label>
+            <input name="Private" type="checkbox" value="yes" />
+        </label> Keep my email address private. We'll remove your public
+            profile email  and use 1978331+username@users,noreply.localhost<br />
+        <p>DOB
+            <label>
+                <input name="birth date" type="date" size="25" maxlength="30" value="  /  /  " />
+            </label>
+            <!--<input  name="DOBuser" type="date" id="DOBuser">-->
+            <!--<input name="calendar" input type="date" id="date" placeholder="data" required size="25" maxlength="30"-->
+               <!--value="380" /> <br /></p>-->
+        <p>Blog url
+            <label for="url"></label><input type="url" name="homepage" id="url" size="25" maxlength="30" value="http://" /> <br /></p>
+        <p>About me <br>
+            <label for="About me"></label><textarea name="About me" id="About me" cols="48" rows="8"> </textarea> <br /></p>
+        <P>Profile Picture
+            <input name="send_f" type="file" value="Upload" size="30" maxlength="60" />
+        </P>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Professional Info
+        </legend>
+        <p>Desire to study
+            <label>
+                <input type="range" min="0" max="100" step="1" value="50">
+            </label></p>
+        <P>Experience
+            <form action="http://ab-w.net/info.php" method="post" name="drop_down_box">
+                <label>
+                    <select name="menu" size="2" multiple="multiple">
+                        <option value="first">1</option>
+                        <option selected="selected" value="second">2</option>
+                        <option value="third">3</option>
+                        <option value="fourth">4</option>
+                    </select>
+                </label>
+                <span>years</span>
+            </form>
+        <p>Development Experience</p>
+            <form action="HTML Forms.html" method="get" name="experience" >
+
+                <input type="radio" id="check1" name="grades" value="" checked="checked" />
+                <label for="check1">Learning to Program</label> <br />
+
+                <input type="radio" id="check2" name="grades" value="" />
+                <label for="check2">Junior Developer</label> <br />
+
+                <input type="radio" id=check3 name="grades" value="car" />
+                <label for="check3">Mid-level Developer</label> <br />
+
+                <input type="radio" id=check4 name="grades" value="bus" />
+                <label for="check4">Senior Developer</label> <br />
+            <!--<input type="submit" value="OK" />-->
+            <!--<input type="reset" value="Reset" />-->
+             </form>
+        <p>Choose your Country
+            <form method="post" name="drop_down_box">
+                <label>
+                    <select name="menu" size="1">
+                    <!--<option><span class="grey_color">Choose your country</option>-->
+                        <option value="first">Ukraine</option>
+                        <option value="second">USA</option>
+                        <option value="third">Great Britain</option>
+                        <option value="fourth">Germany</option>
+                    </select>
+                </label>
+            </form>
+        </p>
+            <form name="Skills" action="" method="get">
+
+                <input type="checkbox" name="skills" id="id_check1"value="HTML" checked="checked" />
+                <label for="id_check1">HTML</label> <br />
+
+                <input type="checkbox" name="skills" id="id_check2"value="CSS" />
+                <label for="id_check2">CSS</label> <br />
+
+                <input type="checkbox" name="skills" id="id_check3" value="JS" />
+                <label for="id_check3">Javascript</label> <br />
+
+                <input type="checkbox" name="skills" id="id_check4" value="PHP" />
+                <label for="id_check4">PHP</label> <br />
+            </form>
+    </fieldset>
+    <form>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+    </form>
+        <input type="hidden" name="Paddington" value="В каждом доме должен жить медвель">
+</form>
+</head>
+<body>
+
+</body>
+</html>
