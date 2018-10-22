@@ -11,57 +11,59 @@
         <legend>
             Basic Info:
         </legend>
-        <p>ID
+        <div>ID
             <label>
-                <input name="ID" type="text" size="25" maxlength="30" value="725" />
-            </label></p>
-        <p>First Name
+                <input name="ID" disabled type="text" size="25" maxlength="30" value="725" />
+            </label></div><br>
+        <div>First Name
             <label>
                 <input name="First Name" type="text" size="25" maxlength="30" value="" />
-            </label></p>
-        <p>Last Name
+            </label></div><br>
+        <div>Last Name
             <label>
                 <input name="Last Name" type="text" size="25" maxlength="30" value="" />
-            </label></p>
-        <p>Password
+            </label></div><br>
+        <div>Password
             <label>
                 <input name="pd" type="password" size="25" maxlength="30"  />
-            </label>
-        <p>Phone
+            </label></div><br>
+        <div>Phone
             <label>
                 <input name="Tel" type="text" size="25" maxlength="30" />
-            </label></p>
-        <p>Email
-            <label for="email"></label><input type="text" name="email" id="email" size="25" maxlength="30" value="myemail@placeholder.com" /> <br /></p>
+            </label></div><br>
+        <div>Email
+            <label for="email"></label><input type="text" name="email" id="email" size="25" maxlength="30"
+            value="myemail@placeholder.com" /> <br /></div>
         <label>
             <input name="Private" type="checkbox" value="yes" />
         </label>
-        <p>Keep my email address private. We'll remove your public
-        profile email  and use 1978331+username@users,noreply.localhost</p>
-        <p>DOB
+        <div>Keep my email address private. We'll remove your public
+        profile email  and use 1978331+username@users,noreply.localhost</div><br>
+        <div>DOB
             <label>
                 <input name="birth date" type="date" size="25" maxlength="30" value="  /  /  " />
             </label>
+        </div><br>
             <!--<input  name="DOBuser" type="date" id="DOBuser">-->
             <!--<input name="calendar" input type="date" id="date" placeholder="data" required size="25" maxlength="30"-->
                <!--value="380" /> <br /></p>-->
-        <p>Blog url
-            <label for="url"></label><input type="url" name="homepage" id="url" size="25" maxlength="30" value="http://" /></p>
-        <p>About me <br>
-            <label for="About me"></label><textarea name="About me" id="About me" cols="48" rows="8"> </textarea></p>
-        <P>Profile Picture
-            <input name="send_f" type="file" value="Upload" size="30" maxlength="60" />
-        </P>
+        <div>Blog url
+            <label for="url"></label><input type="url" name="homepage" id="url" size="25" maxlength="30" value="http://" /></div><br>
+        <div>About me <br>
+            <label for="About me"></label><textarea name="About me" id="About me" cols="48" rows="8"> </textarea></div><br>
+        <div>Profile Picture
+            <input name="send_f" type="file" value="Upload" size="30" maxlength="60" /><br>
+        </div>
     </fieldset>
     <fieldset>
         <legend>
             Professional Info
         </legend>
-        <p>Desire to study
+        <div>Desire to study
             <label>
                 <input type="range" min="0" max="100" step="1" value="50">
-            </label></p>
-        <P>Experience
+            </label></div>
+        <div>Experience
         <!--<form action="https://postman-echo.com/post" name="drop_down_box">-->
                 <label>
                     <select name="menu" size="2" multiple="multiple">
@@ -72,8 +74,9 @@
                     </select>
                 </label>
                 <span>years</span><br><br>
+        </div>
             <!--</form>-->
-        <p>Development Experience</p>
+        <div>Development Experience</div>
             <!--<form action="" method="get" name="experience" >-->
 
                 <input type="radio" id="check1" name="grades" value="" checked="checked" />
@@ -120,11 +123,10 @@
                 <label for="skills-php">PHP</label> <br />
             <!--</form>-->
         </div>
-    </fieldset>
-
         <input type="submit" value="Submit" />
         <input type="reset" value="Reset" />
         <input type="hidden" name="Paddington" value="В каждом доме должен жить медвель">
+    </fieldset>
 </form>
 </body>
 </html>
