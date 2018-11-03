@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML формы</title>
+</head>
+<body>
+<h1>Profile Edit Page</h1>
+<form action="https://postman-echo.com/post" method="post">
+    <fieldset>
+        <legend>
+            Basic Info:
+        </legend>
+        <div>ID
+            <label>
+                <input name="ID" disabled type="text" size="25" maxlength="30" value="725" />
+            </label></div><br>
+        <div>First Name
+            <label>
+                <input name="First Name" type="text" size="25" maxlength="30" value="" />
+            </label></div><br>
+        <div>Last Name
+            <label>
+                <input name="Last Name" type="text" size="25" maxlength="30" value="" />
+            </label></div><br>
+        <div>Password
+            <label>
+                <input name="pd" type="password" size="25" maxlength="30"  />
+            </label></div><br>
+        <div>Phone
+            <label>
+                <input name="Tel" type="text" size="25" maxlength="30" />
+            </label></div><br>
+        <div>Email
+            <label for="email"></label><input type="text" name="email" id="email" size="25" maxlength="30"
+            value="myemail@placeholder.com" /> <br /></div>
+        <label>
+            <input name="Private" type="checkbox" value="yes" />
+        </label>
+        <div>Keep my email address private. We'll remove your public
+        profile email  and use 1978331+username@users,noreply.localhost</div><br>
+        <div>DOB
+            <label>
+                <input name="birth date" type="date" size="25" maxlength="30" value="  /  /  " />
+            </label>
+        </div><br>
+            <!--<input  name="DOBuser" type="date" id="DOBuser">-->
+            <!--<input name="calendar" input type="date" id="date" placeholder="data" required size="25" maxlength="30"-->
+               <!--value="380" /> <br /></p>-->
+        <div>Blog url
+            <label for="url"></label><input type="url" name="homepage" id="url" size="25" maxlength="30" value="http://" /></div><br>
+        <div>About me <br>
+            <label for="About me"></label><textarea name="About me" id="About me" cols="48" rows="8"> </textarea></div><br>
+        <div>Profile Picture
+            <input name="send_f" type="file" value="Upload" size="30" maxlength="60" /><br>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Professional Info
+        </legend>
+        <div>Desire to study
+            <label>
+                <input type="range" min="0" max="100" step="1" value="50">
+            </label></div>
+        <div>Experience
+        <!--<form action="https://postman-echo.com/post" name="drop_down_box">-->
+                <label>
+                    <select name="menu" size="2" multiple="multiple">
+                        <option value="first">1</option>
+                        <option selected="selected" value="second">2</option>
+                        <option value="third">3</option>
+                        <option value="fourth">4</option>
+                    </select>
+                </label>
+                <span>years</span><br><br>
+        </div>
+            <!--</form>-->
+        <div>Development Experience</div>
+            <!--<form action="" method="get" name="experience" >-->
+
+                <input type="radio" id="check1" name="grades" value="" checked="checked" />
+                <label for="check1">Learning to Program</label> <br />
+
+                <input type="radio" id="check2" name="grades" value="" />
+                <label for="check2">Junior Developer</label> <br />
+
+                <input type="radio" id="check3" name="grades" value="" />
+                <label for="check3">Mid-level Developer</label> <br />
+
+                <input type="radio" id=check4 name="grades" value="" />
+                <label for="check4">Senior Developer</label> <br><br>
+            <!--<input type="submit" value="OK" />-->
+            <!--<input type="reset" value="Reset" />-->
+             <!--</form>-->
+        <div>Choose your Country
+            <!--<form method="post" name="drop_down_box">-->
+                <label>
+                    <select id="country" name="country" required>
+                    <option disabled selected>--Choose your country--</option>
+                        <option value="UA">Ukraine</option>
+                        <option disabled>--------------------</option>
+                        <option value="US">USA</option>
+                        <option value="GB">Great Britain</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </label>
+            <!--</form>-->
+        </div>
+        <div>
+            <!--<form name="Skills" action="" method="get">-->
+
+                <input type="checkbox" name="skills" id="skills-html"value="HTML" checked="checked" />
+                <label for="skills-html">HTML</label> <br />
+
+                <input type="checkbox" name="skills" id="skills-css"value="CSS" />
+                <label for="skills-css">CSS</label> <br />
+
+                <input type="checkbox" name="skills" id="skills-js" value="JS" />
+                <label for="skills-js">Javascript</label> <br />
+
+                <input type="checkbox" name="skills" id="skills-php" value="PHP" />
+                <label for="skills-php">PHP</label> <br />
+            <!--</form>-->
+        </div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+        <input type="hidden" name="Paddington" value="В каждом доме должен жить медвель">
+    </fieldset>
+</form>
+</body>
+</html>
